@@ -3,18 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dayplanner; 
+package dayplanner;
 
 
-public class DayPlanner {
+public class Appointment {
     private String month, message;
-        private int day, hour, minute;
+    private int day, hour, minute;
     
-    public class Appointment {
-        
-        
-        
-        public Appointment(){
+    public Appointment(){
             day = 1;
             hour = 1;
             minute = 1;
@@ -80,10 +76,4 @@ public class DayPlanner {
         }
     }
 
-    public static void main(String args[]) {
-        System.out.println ("fuck this" + month);
-    }
-       
-} 
-    
 

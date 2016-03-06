@@ -48,7 +48,7 @@ public class NewClass {
         boolean userValue = true;
         char x;
         do{
-            System.out.println("Please input a character between " + min + " and " + max + ". ");
+            System.out.println("Please enter a character between " + min + " and " + max + ". ");
             x = getChar();
             char temp = x;
             temp = Character.toUpperCase(temp);
