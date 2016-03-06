@@ -75,9 +75,20 @@ public class Appointment {
             else 
                 System.out.println("Invalid minute value.");
         }
-        public void toString(String month, String message, int day, int hour, int minute){
-            System.out.println("Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + minute);
+       
+        public String toString(){
+            String date;
+            if (hour < 10)
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + " 0" + hour + ":" + minute;
+            else 
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + minute;
+            
+        return date;
         }
-    }
+
+
+
+
+}
 
 
