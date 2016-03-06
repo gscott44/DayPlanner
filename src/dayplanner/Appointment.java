@@ -82,11 +82,30 @@ public class Appointment {
                 date = "Your appointment for " + message + " is on " + month + " " + day + " at " + " 0" + hour + ":" + minute;
             else 
                 date = "Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + minute;
-            
         return date;
+        }
+        public void inputAppointment(){
+            System.out.println("Please enter a month for your appointment.");
+            setMonth(NewClass.getString());
+            
+            System.out.println("Please enter a day for your appointment.");
+            NewClass.getInt();
+            
+            System.out.println("Please enter a hour for your appointment.");
+            NewClass.getInt();
+            
+            System.out.println("Please enter a minute for your appointment.");
+            NewClass.getInt();
+            
+            System.out.println("Please enter a message for your appointment.");
+            NewClass.getString();
         }
 
 
+    public static void main(String[] args) {
+        Appointment a1 = new Appointment();
+        
+    }
 
 
 }
