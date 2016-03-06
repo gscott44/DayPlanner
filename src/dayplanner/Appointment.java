@@ -18,11 +18,15 @@ public class Appointment {
             message = "Default";
         }
         public Appointment (int day, int hour, int minute, String month, String message){
-            
+            setDay(day);
+            setHour(hour);
+            setMinute(minute);
+            setMonth(3, 3, month); 
+            setMessage(0, 40, message);
         }
         
         public String getMonth(){
-            return NewClass.getString();
+            return month;
         }
         
         public void setMonth(int min, int max, String s){
@@ -31,7 +35,7 @@ public class Appointment {
         }
         
         public String getMessage(){
-            return NewClass.getString(0, 45);
+            return message;
         }
         
         public void setMessage(int min, int max, String s) {
@@ -40,7 +44,7 @@ public class Appointment {
         }
         
         public int getDay(){
-            return NewClass.getInt();
+            return day;
         }
         public void setDay(int x){
             if (x >= 1 && x <= 31) 
@@ -50,7 +54,7 @@ public class Appointment {
         }
         
         public int getHour(){
-            return NewClass.getInt();
+            return hour;
         }
         
         public void setHour(int x){
@@ -61,7 +65,7 @@ public class Appointment {
         }
         
         public int getMinute(){
-            return NewClass.getInt();
+            return minute;
         }
         
         public void setMinute(int x){
