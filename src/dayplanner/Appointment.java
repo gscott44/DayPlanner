@@ -86,19 +86,19 @@ public class Appointment {
         }
         public void inputAppointment(){
             System.out.println("Please enter a month for your appointment.");
-            setMonth(NewClass.getString());
+            setMonth(2, 2, NewClass.getString(3, 3));
             
             System.out.println("Please enter a day for your appointment.");
-            NewClass.getInt();
+            setDay(NewClass.getInt(0, 31));
             
             System.out.println("Please enter a hour for your appointment.");
-            NewClass.getInt();
+            setHour(NewClass.getInt(0, 24));
             
             System.out.println("Please enter a minute for your appointment.");
-            NewClass.getInt();
+            setMinute(NewClass.getInt(0, 60));
             
             System.out.println("Please enter a message for your appointment.");
-            NewClass.getString();
+            setMessage(0, 40, NewClass.getString(0, 40));
         }
 
 
