@@ -86,7 +86,7 @@ public class Appointment {
         }
         public void inputAppointment(){
             System.out.println("Please enter a month for your appointment.");
-            setMonth(2, 2, NewClass.getString(3, 3));
+            setMonth(3, 3, NewClass.getString(3, 3));
             
             System.out.println("Please enter a day for your appointment.");
             setDay(NewClass.getInt(0, 31));
@@ -104,7 +104,11 @@ public class Appointment {
 
     public static void main(String[] args) {
         Appointment a1 = new Appointment();
+        a1.inputAppointment();
+        System.out.println(a1.toString());
         
+        Appointment a2 = new Appointment(25, 12, 25, "jan", "Hi");
+        System.out.println(a2);
     }
 
 

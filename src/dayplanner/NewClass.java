@@ -95,7 +95,7 @@ public class NewClass {
         boolean userValue = true; 
         String x;
         do {
-            System.out.print("Enter an String between " + min + " and " + max + " characters. ");
+            System.out.print("Enter an String between " + min + " and " + max + " characters: ");
             x = getString();
             if (x.length() >= min && x.length() <= max){
                 userValue = true;
