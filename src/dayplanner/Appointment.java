@@ -107,7 +107,7 @@ public class Appointment {
         a1.inputAppointment();
         System.out.println(a1.toString());
         
-        Appointment a2 = new Appointment(25, 12, 25, "jan", "Hi");
+        Appointment a2 = new Appointment(1, 1, 1, "Jan", "Hello World!");
         System.out.println(a2);
     }
 
