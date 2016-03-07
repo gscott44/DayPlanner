@@ -8,4 +8,9 @@ public class Planner {
     
     private Appointment[] planner = new Appointment[20];
     
+    public Planner () {
+        Appointment a1 = new Appointment(4, 17, 30, "Mar", "Quiz1");
+    }
+    
 }
+
