@@ -37,7 +37,7 @@ public class UserInput {
     }
 
     public static char getChar(){
-        System.out.print("Integer input: ");
+        System.out.print("Char input: ");
         return scanner.next().charAt(0);
 
     }
@@ -86,9 +86,9 @@ public class UserInput {
         return x;
     }
     
-    public static String getString(){
+    public static String getString(){        
+        System.out.println("String: ");
         return scanner.nextLine();
-
     }
 
     public static String getString(int min, int max){
