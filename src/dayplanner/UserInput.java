@@ -12,7 +12,6 @@ public class UserInput {
     
         static Scanner scanner = new Scanner(System.in);
 
-
     public static int getInt (){
         System.out.print("Integer input: ");
         return Integer.parseInt(scanner.nextLine());
