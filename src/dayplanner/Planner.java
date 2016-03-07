@@ -17,7 +17,7 @@ public class Planner {
         Appointment[] planner = {a, a2, a3, a4};
     }
     
-    public void runMethod() {
+    public void run() {
         
         System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
         UserInput.getChar();
@@ -33,6 +33,14 @@ public class Planner {
     }
     
     public void listAppointment(){
+        int number = 1;
+        int i = 0;
+        
+        while (number <= planner.length){
+            System.out.println(number + ". " + planner[i]);
+            number++;
+            i++;
+        }
         
     }
     
