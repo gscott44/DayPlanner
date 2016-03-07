@@ -8,7 +8,7 @@ package dayplanner;
 import java.util.Scanner;
 
 
-public class NewClass {
+public class UserInput {
     
         static Scanner scanner = new Scanner(System.in);
 
