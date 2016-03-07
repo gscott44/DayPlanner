@@ -78,9 +78,15 @@ public class Appointment {
        
         public String toString(){
             String date;
-            if (hour < 10)
-                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + " 0" + hour + ":" + minute;
-            else 
+            if (hour < 10 && minute < 10)
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + " 0" + hour + ":" + "0" + minute;
+            else if (minute < 10)
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + "0" + minute;
+            else if (hour > 10 && minute < 10)
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + "0" + minute;
+            else if (hour < 10 && minute > 10)
+                date = "Your appointment for " + message + " is on " + month + " " + day + " at " + "0"+ hour + ":" + minute;
+            else
                 date = "Your appointment for " + message + " is on " + month + " " + day + " at " + hour + ":" + minute;
         return date;
         }
