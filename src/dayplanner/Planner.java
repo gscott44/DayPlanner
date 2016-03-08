@@ -116,13 +116,11 @@ public class Planner {
     }
     
     public void insertAppointment(Appointment A1){
-        int index = 0;
-        int index2;
-        
+        int index = 0;        
         
         for (int i = 0; i < numAppointments; i++){
             if (compareAppointment(A1, planner[i]))
-                index = i;
+                index = i - 1;
         }
         numAppointments++;
         Appointment temp1 = planner[index];
