@@ -2,7 +2,9 @@
  * Programmer: Griffin Scott    
  * March 8, 2016
  * CS 182 Lab project 1
- * This Appointment.java file uses
+ * This Appointment.java file uses different methods to make appointments. It uses get and set methods for 
+ * each aspect of the appointment and then pulls from the UserInput.java file to get user input and make 
+ * sure all the inputs are valid for the appointment.  
 */
 package dayplanner;
 
@@ -96,7 +98,7 @@ public class Appointment {
             setMonth(3, 3, UserInput.getString(3, 3));
             
             System.out.println("Please enter a day for your appointment.");
-            setDay(UserInput.getInt(0, 31));
+            setDay(UserInput.getInt(1, 31));
             
             System.out.println("Please enter a hour for your appointment.");
             setHour(UserInput.getInt(0, 24));

@@ -2,7 +2,10 @@
  * Programmer: Griffin Scott
  * March 8, 2016
  * CS 182 Lab Project 1
- * 
+ * This Planner.java file takes the Appointment.java file and puts all new months into an array that is sorted
+ * by the order in which the appointments are. In this .java file you can list all the appointments you have, 
+ * insert new appointments, delete appointments, and add new appointments. This file also compares the different 
+ * appointments to determine where to insert new appointemnts.  
  */
 package dayplanner;
 
