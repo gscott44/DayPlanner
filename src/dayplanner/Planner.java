@@ -28,15 +28,19 @@ public class Planner {
         do {
             switch (value) {
                 case 'A':
+                case 'a':
                     addAppointment();
                     break;
                 case 'D':
+                case 'd':
                     deleteAppointment();
                     break;
                 case 'L':
+                case 'l':
                     listAppointment();
                     break;
                 case 'E':
+                case 'e':
                     exitMenu = true;
                     break;
                 default:
