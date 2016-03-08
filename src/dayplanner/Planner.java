@@ -65,7 +65,7 @@ public class Planner {
         int number = 1;
         int i = 0;
         
-        while (number <= planner.length){
+        for(i = 0; i < planner.length; i++) {
             System.out.println(number + ". " + planner[i]);
             number++;
             i++;
