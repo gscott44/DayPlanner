@@ -21,7 +21,18 @@ public class Planner {
         planner[2] = a3;
         planner[3] = a4;
         
-        String[] months = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"};
+        months[0] = "jan";
+        months[1] = "feb";
+        months[2] = "mar";
+        months[3] = "apr";
+        months[4] = "may";
+        months[5] = "jun";
+        months[6] = "jul";
+        months[7] = "aug";
+        months[8] = "sep";
+        months[9] = "oct";
+        months[10] = "nov";
+        months[11] = "dec";
         
         numAppointments = 4; 
     }
