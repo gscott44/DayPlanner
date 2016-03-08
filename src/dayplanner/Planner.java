@@ -103,13 +103,14 @@ public class Planner {
     public void insertAppointment(Appointment A1){
         int index = 0;
         int index2;
-        numAppointments++;
+        
         
         for (int i = 0; i < numAppointments; i++){
             if (compareAppointment(A1, planner[i]))
                 index = i;
                 index2 = i + 1;
         }
+        numAppointments++;
         Appointment temp1 = planner[index];
         for (int i = index; i < numAppointments; i++){
             Appointment temp = planner[i+1];
@@ -145,8 +146,7 @@ public class Planner {
     public void addAppointment(){
         Appointment A1 = new Appointment();
         A1.inputAppointment();
-        //call inserAppointment
-        //numAppointments++;
+        insertAppointment(A1);
     }
     
     public static void main(String args[]) {
