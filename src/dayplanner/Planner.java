@@ -101,6 +101,12 @@ public class Planner {
     }
     
     public void insertAppointment(Appointment A1){
+        
+        for (int i = 0; i < planner.length; i++){
+            if ()
+        }
+           
+        compareAppointment(A1, );
         //call compare method 
     }
     
@@ -127,9 +133,10 @@ public class Planner {
     }
     
     public void addAppointment(){
-        //call inputappointment
+        Appointment A1 = new Appointment();
+        A1.inputAppointment();
         //call inserAppointment
-        //numAppointments++
+        //numAppointments++;
     }
     
     public static void main(String args[]) {
