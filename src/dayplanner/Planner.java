@@ -101,7 +101,7 @@ public class Planner {
     }
     
     public void insertAppointment(Appointment A1){
-        int index;
+        int index = 0;
         int index2;
         numAppointments++;
         
@@ -110,13 +110,15 @@ public class Planner {
                 index = i;
                 index2 = i + 1;
         }
-        
-        for (
-        //store i+1, copy i to i+1 inthe array, )
-           
-        
-        //call compare method 
+        Appointment temp1 = planner[index];
+        for (int i = index; i < numAppointments; i++){
+            Appointment temp = planner[i+1];
+            planner[i+1] = temp1;
+            temp1 = temp;
+         
     }
+        
+}
     
     public void listAppointment(){
         int number = 1;
