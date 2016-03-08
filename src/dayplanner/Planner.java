@@ -1,6 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
+/* 
+ * Programmer: Griffin Scott
+ * March 8, 2016
+ * CS 182 Lab Project 1
+ * 
  */
 package dayplanner;
 
@@ -23,18 +25,18 @@ public class Planner {
         planner[3] = a4;
         
         
-        months[0] = "jan";
-        months[1] = "feb";
-        months[2] = "mar";
-        months[3] = "apr";
-        months[4] = "may";
-        months[5] = "jun";
-        months[6] = "jul";
-        months[7] = "aug";
-        months[8] = "sep";
-        months[9] = "oct";
-        months[10] = "nov";
-        months[11] = "dec"; 
+        months[0] = "Jan";
+        months[1] = "Feb";
+        months[2] = "Mar";
+        months[3] = "Apr";
+        months[4] = "May";
+        months[5] = "Jun";
+        months[6] = "Jul";
+        months[7] = "Aug";
+        months[8] = "Sep";
+        months[9] = "Oct";
+        months[10] = "Nov";
+        months[11] = "Dec"; 
         
         numAppointments = 4; 
     }

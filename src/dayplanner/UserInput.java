@@ -1,7 +1,10 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Programmer: Griffin Scott
+ * March 8, 2016
+ * CS 182 Lab Project 1
+ * This UserInput.java file is going to be used for all the projects we have in this class.  
+ * this is used for all user input so we do not have to make new scanners everytime we are gettin 
+ * input from the user.  
  */
 package dayplanner;
 
