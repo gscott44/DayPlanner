@@ -23,24 +23,21 @@ public class Planner {
         UserInput.getChar();
         
         char value = UserInput.getChar();
+        value = Character.toUpperCase(value);
         boolean exitMenu = false; 
         
         do {
             switch (value) {
                 case 'A':
-                case 'a':
                     addAppointment();
                     break;
                 case 'D':
-                case 'd':
                     deleteAppointment();
                     break;
                 case 'L':
-                case 'l':
                     listAppointment();
                     break;
                 case 'E':
-                case 'e':
                     exitMenu = true;
                     break;
                 default:
@@ -66,9 +63,8 @@ public class Planner {
         int i = 0;
         
         for(i = 0; i < planner.length; i++) {
-            System.out.println(number + ". " + planner[i]);
+            System.out.println(number + ". " + planner[i].toString());
             number++;
-            i++;
         }
         
     }
