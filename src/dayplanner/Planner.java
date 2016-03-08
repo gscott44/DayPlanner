@@ -22,16 +22,27 @@ public class Planner {
         System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
         UserInput.getChar();
         
-        while (UserInput.getChar('A', 'Z') != 'E') {
-            if (UserInput.getChar('A', 'Z') == 'A')
-                addAppointment();
-            else if (UserInput.getChar('A', 'Z') == 'D')
-                deleteAppointment();
-            else if (UserInput.getChar('A', 'Z') == 'L')
-                listAppointment();
-            else
-                System.out.println("Please enter a valid choice.");
-        }
+        char value = UserInput.getChar();
+        boolean exitMenu = false; 
+        
+        do {
+            switch (value) {
+                case 'A':
+                    addAppointment();
+                    break;
+                case 'D':
+                    deleteAppointment();
+                    break;
+                case 'L':
+                    listAppointment();
+                    break;
+                case 'E':
+                    exitMenu = true;
+                    break;
+                default:
+                    
+            }
+        } while (!exitMenu);
     }
     
     public boolean compareAppointment(Appointment A1, Appointment A2) {
@@ -66,6 +77,10 @@ public class Planner {
         
     }
     
+    public static void main(String args[]) {
+        Planner p1 = new Planner();
+        p1.run();
+    }
     
 }
 
