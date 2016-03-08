@@ -53,14 +53,20 @@ public class Planner {
     public boolean compareAppointment(Appointment A1, Appointment A2) {
         
         String a1Month = A1.getMonth();
-        String storedValue;
+        String a2Month = A2.getMonth();
+        int a1Value = 0;
+        int a2Value = 0;
         
-        for (int i = 0; i < months.length; i++)
+        for (int i = 0; i < months.length; i++){
             if (a1Month == months[i])
-                storedValue = months[i];
+                a1Value = i;
+        }
+        for (int i = 0; i < months.length; i++){
+            if (a2Month == months[i])
+                a2Value = i;
+        }
         
-        
-        if (A1 < A2)
+        if (a1Value < a2Value)
             return true;
         else 
             return false;
