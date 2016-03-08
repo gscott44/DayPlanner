@@ -7,6 +7,7 @@ package dayplanner;
 public class Planner {
     
     private Appointment[] planner = new Appointment[20];
+    private String[] months = new String[12];
     
     public Planner () {
         Appointment a = new Appointment(4, 17, 30, "Mar", "Quiz1");
@@ -15,6 +16,9 @@ public class Planner {
         Appointment a4 = new Appointment(3, 17, 30, "Jun", "Final");
         
         Appointment[] planner = {a, a2, a3, a4};
+        
+        String[] months = {"jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"};
+        
     }
     
     public void run() {
@@ -48,6 +52,14 @@ public class Planner {
     
     public boolean compareAppointment(Appointment A1, Appointment A2) {
         
+        String a1Month = A1.getMonth();
+        String storedValue;
+        
+        for (int i = 0; i < months.length; i++)
+            if (a1Month == months[i])
+                storedValue = months[i];
+        
+        
         if (A1 < A2)
             return true;
         else 
@@ -60,9 +72,8 @@ public class Planner {
     
     public void listAppointment(){
         int number = 1;
-        int i = 0;
         
-        for(i = 0; i < planner.length; i++) {
+        for(int i = 0; i < planner.length; i++) {
             System.out.println(number + ". " + planner[i].toString());
             number++;
         }
