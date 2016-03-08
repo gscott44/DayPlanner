@@ -21,11 +21,22 @@ public class Planner {
         
         System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
         UserInput.getChar();
-                
+        if (x == 'A')
+            addAppointment();
+        else if (x == 'D')
+            deleteAppointment();
+        else if (x == 'L')
+            listAppointment();
+        else
+            
     }
     
     public boolean compareAppointment(Appointment A1, Appointment A2) {
         
+        if (A1 < A2)
+            return true;
+        else 
+            return false;
     }
     
     public void insertAppointment(Appointment A1){
@@ -52,7 +63,6 @@ public class Planner {
         
     }
     
-    public 
     
 }
 
