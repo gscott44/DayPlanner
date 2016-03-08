@@ -101,12 +101,20 @@ public class Planner {
     }
     
     public void insertAppointment(Appointment A1){
+        int index;
+        int index2;
+        numAppointments++;
         
-        for (int i = 0; i < planner.length; i++){
-            if ()
+        for (int i = 0; i < numAppointments; i++){
+            if (compareAppointment(A1, planner[i]))
+                index = i;
+                index2 = i + 1;
         }
+        
+        for (
+        //store i+1, copy i to i+1 inthe array, )
            
-        compareAppointment(A1, );
+        
         //call compare method 
     }
     
