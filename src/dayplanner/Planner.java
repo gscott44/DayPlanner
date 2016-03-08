@@ -21,14 +21,16 @@ public class Planner {
         
         System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
         UserInput.getChar();
-        if (x == 'A')
-            addAppointment();
-        else if (x == 'D')
-            deleteAppointment();
-        else if (x == 'L')
-            listAppointment();
-        else
-            
+        
+        while (UserInput.getChar() != 'E')
+            if (UserInput.getChar() == 'A')
+                addAppointment();
+            else if (UserInput.getChar() == 'D')
+                deleteAppointment();
+            else if (UserInput.getChar() == 'L')
+                listAppointment();
+            else
+                System.out.println("Please enter a valid choice.");
     }
     
     public boolean compareAppointment(Appointment A1, Appointment A2) {
