@@ -37,7 +37,7 @@ public class UserInput {
 
     public static char getChar(){
         System.out.print("Char input: ");
-        return scanner.next().charAt(0);
+        return scanner.nextLine().charAt(0);
 
     }
     

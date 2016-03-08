@@ -28,13 +28,15 @@ public class Planner {
     
     public void run() {
         
-        System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
         
-        char value = UserInput.getChar();
-        value = Character.toUpperCase(value);
-        boolean exitMenu = false; 
+         boolean exitMenu = false;
         
         do {
+            System.out.println("A)dd Appointment, D)elete Appointment, L)ist Appointment, E)xit");
+
+        char value = UserInput.getChar();
+            value = Character.toUpperCase(value);
+            
             switch (value) {
                 case 'A':
                     addAppointment();
@@ -99,13 +101,13 @@ public class Planner {
     }
     
     public void insertAppointment(Appointment A1){
-        
+        //call compare method 
     }
     
     public void listAppointment(){
         int number = 1;
         
-        for(int i = 0; i < numAppointments - 1; i++) {
+        for(int i = 0; i < numAppointments; i++) {
             System.out.println(number + ". " + planner[i].toString());
             number++;
         }
@@ -117,14 +119,17 @@ public class Planner {
         System.out.println("Please select an appointment to delete.");
         int value = UserInput.getInt();
         
-        planner[value]
-                //find the one to delete, go into the array at the value, for loop to move everything down one spot
-        for (int i = value; i < planner.length; i++)
-            
+        numAppointments--;       
+        for (int i = value - 1; i < numAppointments; i++){
+            if (i + 1 <= numAppointments)
+                planner[i] = planner[i + 1];
+        }  
     }
     
     public void addAppointment(){
-        
+        //call inputappointment
+        //call inserAppointment
+        //numAppointments++
     }
     
     public static void main(String args[]) {
