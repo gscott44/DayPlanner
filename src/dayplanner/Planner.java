@@ -10,6 +10,7 @@ public class Planner {
     private String[] months = new String[12];
     int numAppointments;
     
+    
     public Planner () {
         Appointment a = new Appointment(4, 17, 30, "Mar", "Quiz1");
         Appointment a2 = new Appointment(1, 17, 30, "Apr", "Midterm");
@@ -20,6 +21,7 @@ public class Planner {
         planner[1] = a2;
         planner[2] = a3;
         planner[3] = a4;
+        
         
         months[0] = "jan";
         months[1] = "feb";
@@ -32,7 +34,7 @@ public class Planner {
         months[8] = "sep";
         months[9] = "oct";
         months[10] = "nov";
-        months[11] = "dec";
+        months[11] = "dec"; 
         
         numAppointments = 4; 
     }
@@ -119,10 +121,10 @@ public class Planner {
         for (int i = 0; i < numAppointments; i++){
             if (compareAppointment(A1, planner[i]))
                 index = i;
-                index2 = i + 1;
         }
         numAppointments++;
         Appointment temp1 = planner[index];
+        planner[index] = A1;
         for (int i = index; i < numAppointments; i++){
             Appointment temp = planner[i+1];
             planner[i+1] = temp1;
