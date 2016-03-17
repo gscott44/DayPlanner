@@ -104,7 +104,7 @@ public class Appointment {
             setHour(UserInput.getInt(0, 24));
             
             System.out.println("Please enter a minute for your appointment.");
-            setMinute(UserInput.getInt(0, 60));
+            setMinute(UserInput.getInt(0, 59));
             
             System.out.println("Please enter a message for your appointment.");
             setMessage(0, 40, UserInput.getString(0, 40));
